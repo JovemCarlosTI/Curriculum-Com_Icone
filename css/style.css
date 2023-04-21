@@ -1,0 +1,113 @@
+body {
+  color: darkslategrey;
+  font-family: arial, sans-serif;
+  font-size: 17px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#copyright {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Instrução 1 */
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+}
+
+h2 {
+  font-size:24px;
+  background-color: lightskyblue;
+
+/* Instrução 2 */
+  border-radius: 5px;
+}
+
+h1, h2, a, a:visited {
+  color: darkblue;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 a, h1 a:visited {
+  color: white;
+}
+h2 a, h2 a:visited {
+  color: lightskyblue;
+}
+h1:hover a, h2:hover a {
+  color: darkblue;
+}
+
+/* Instrução 3 */
+#launch-icon {
+  font-size: 1rem;
+}
+
+#launch-icon, p {
+  line-height: 1.5rem;
+}
+
+/* Instrução 4 */
+.btn {
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+}
+
+  /* Foi adicionado ".btn:hover a" porque o link fica sem cor ao ter o hover nas bordas */
+.btn:hover, .btn:hover a{
+  color: white;
+  background-color: darkblue;
+  text-decoration: none;
+}
+
+/* Instrução 5 */
+#social {
+  text-align: center;
+}
+
+#social a {
+  text-decoration: none;
+  font-size: 2rem;
+
+  /* ? O enunciado pede cor branca para o texto, mas não tem texto (só icone) */
+  color: white;
+}
+
+#social .facebook-icon,#social .linkedin-icon {
+  color: navy;
+}
+
+#social .twitter-icon {
+  color: dodgerblue;
+}
+
+/* Instrução 6 */
+@media print {
+  body, h1 {
+    color: black;
+    font-family: Times, serif;
+  }
+
+  #person {
+    text-align: left;
+  }
+
+  h2 {
+    background-color: unset;
+  }
+
+  h2 a, a.topo {
+    color: white;
+  }
+}
